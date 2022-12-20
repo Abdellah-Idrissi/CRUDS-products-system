@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CRUDS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <main>
+
+    <h1>CRUDS</h1>
+    <p class="h1__description">CREATE READ UDPATE DELETE SEARCH</p>
+
+    <form action="" class="create__form">
+      <input type="text" class="title__input" placeholder="Title" >
+
+    <div class="product__details__container">
+      <div class="product__details">
+        <input type="number" class="price__input" placeholder="Price">
+        <input type="number" class="taxes__input" placeholder="Taxes">
+        <input type="number" class="ads__input" placeholder="Ads">
+        <input type="number" class="discount__input" placeholder="Discount">
+      </div>
+      <div class="total__container no__total">Total : <span class="total__element"></span></div>
+    </div>
+
+      <input type="number" class="count__input" placeholder="Count">
+      <input type="text" class="category__input" placeholder="Category">
+      <input type="submit" value="Create" class="bigger create__button">
+    </form>
+
+
+    <hr>
+
+    <form action="" class="search__form">
+      <select name="" id="" class="search__method">
+        <option value="search__title">Search by Title</option>
+        <option value="search__category">Search by Category</option>
+      </select>
+      <input type="text" placeholder="Search by Title" class="search__input">
+    </form>
+
+    <hr>
+
+    <button class="delete__all bigger">Delete All (<span class="products__numb">0</span>)</button>
+
+    <div class="table__container">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>TITLE</th>
+            <th>PRICE</th>
+            <th>TAXES</th>
+            <th>ADS</th>
+            <th>DISCOUNT</th>
+            <th>COUNT</th>
+            <th>TOTAL</th>
+            <th>CATEGORY</th>
+            <th>UPDATE</th>
+            <th>DELETE</th>
+            <th>PLUS</th>
+            <th>MINUS</th>
+          </tr>
+        </thead>
+  
+        <tbody class="table__body">
+        </tbody>
+
+  
+  
+      </table>
+    </div>
+  </main>
+
+
+
+  <script src="main.js"></script>
+</body>
+</html>

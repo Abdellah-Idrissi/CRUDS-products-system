@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: #222;
+}
+
+input,
+button {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+  background-color: #00308F;
+  color: white;
+  padding: 5px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #012b80;
+}
+
+
+input:not(input[type="submit"]){
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #111;
+  font-size: 15px;
+  caret-color: #434343;
+  color: white;
+  font-weight: 400;
+}
+
+main {
+  max-width: 1100px;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1150px){
+  main {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+}
+
+.create__form {
+  margin-top: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+.product__details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 12px;
+}
+
+.total__container {
+  padding: 4px;
+  border-radius: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.total__container.no__total {
+  background-color: #D22B2B;
+  opacity: 0.2;
+}
+
+.total__container.yes__total {
+  background-color: #008080;
+}
+
+.count__input {
+  margin-top: 2px;
+}
+
+.bigger {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.h1__description {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.search__form {
+  display: grid;
+  gap: 10px;
+}
+
+.search__method {
+  background-color: #111;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.delete__all {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #7C0A02;
+  transition: 0.3s;
+}
+
+.delete__all:hover {
+  background-color: #690801;
+}
+
+hr {
+  margin: 30px 0;
+}
+
+
+
+thead th{
+  padding: 10px;
+  border-bottom: 1px solid #111;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-spacing: 0px;
+  border: 1px solid #111;
+  border-bottom: none;
+}
+
+td {
+  padding: 6px;
+  border-bottom: 1px solid #111;
+}
+
+td button {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 6px;
+  font-weight: normal;
+}
+
+.update {
+  background-color: #00308f96;
+}
+
+.delete {
+  background-color: #7C0A02;
+}
+
+.table__container {
+  overflow-x: auto;
+}
+
+.plus {
+  background-color: rgba(255, 217, 0, 0.555);
+}
+
+.minus {
+  background-color:darkslateblue;
+}
+
+.plus,
+.minus {
+  font-weight: bold;
+  line-height: 1;
+  font-size: 17px;
+  padding: 7px;
+}
+
+input {
+  transition: 0.3s;
+}
+
+input:not(input[type="submit"]):focus {
+  background-color: black;
+}
+
+
+tr.visible {
+  display: table-row;
+}
+
+tr.hidden {
+  display: none;
+}
+
